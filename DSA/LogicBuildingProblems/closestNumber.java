@@ -20,7 +20,7 @@ public class closestNumber {
         int n = 13;
         int m = 4;
         int res = closest(n,m);
-        System.out.println(res);
+        System.out.print(res);
     }
 
 }
