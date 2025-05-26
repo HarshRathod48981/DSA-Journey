@@ -1,4 +1,4 @@
-package LogicBuildingProblems;
+package LogicBuildingProblemsGFG;
 
 public class swapNum {
     static void swap(int a, int b){

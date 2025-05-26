@@ -1,8 +1,7 @@
-package Arrays;
+package Codechef;
 
 import java.util.*;
 import java.lang.*;
-import java.io.*;
 
 class searchElement
 {

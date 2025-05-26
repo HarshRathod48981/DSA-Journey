@@ -1,4 +1,4 @@
-package Arrays;
+package Codechef;
 import java.util.*;
 
 public class maximumArray {

@@ -1,4 +1,4 @@
-package LogicBuildingProblems;
+package LogicBuildingProblemsGFG;
 
 public class sumOfSquares {
     static int sumSquare(int n){
