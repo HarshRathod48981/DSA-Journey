@@ -1,4 +1,4 @@
-package LogicBuildingProblems;
+package LogicBuildingProblemsGFG;
 
 import java.util.Scanner;
 
