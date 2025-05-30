@@ -14,6 +14,7 @@ public class BitLand {
                 start--;
             }
         }
+
         System.out.println(start);
     }
 }
