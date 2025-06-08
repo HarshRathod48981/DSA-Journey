@@ -18,6 +18,7 @@ public class candyStore {
             } else if (y > x) {
                 totalAmt = x + ((y-x)*2);
             }
+
             System.out.println(totalAmt);
 
         }
