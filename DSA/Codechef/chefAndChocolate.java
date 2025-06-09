@@ -13,6 +13,7 @@ public class chefAndChocolate {
             int z = scanner.nextInt();
             int total = x*5 + y*10;
             int num = total/z;
+
             System.out.println(num);
         }
     }
