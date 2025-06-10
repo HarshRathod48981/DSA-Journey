@@ -7,6 +7,7 @@ public class domino {
         int m = sc.nextInt();
         int n = sc.nextInt();
         int maxDomino = (m*n)/2;
+
         System.out.println(maxDomino);
     }
 }
