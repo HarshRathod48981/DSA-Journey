@@ -1,4 +1,4 @@
-package LogicBuildingProblemsGFG;
+package DSA_kunal_kushwaha;
 
 import java.util.Arrays;
 import java.util.Scanner;
