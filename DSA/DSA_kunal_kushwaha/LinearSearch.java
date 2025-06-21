@@ -19,6 +19,14 @@ public class LinearSearch {
         //System.out.println(result2);
 
 
+        //search in range: search for element n in the range of index [start to end]
+        int target3 = 10;
+        int start = 4;
+        int end = 9;
+        int result3 = SearchInRange(arr, target3, start, end);
+        //System.out.println(result3);
+
+
 
     }
 
@@ -36,6 +44,7 @@ public class LinearSearch {
         return -1;
     }
 
+
     static int SearchIndex2(String string, char n){
         if (string.isEmpty()){
             return -1;
@@ -48,6 +57,20 @@ public class LinearSearch {
         }
         return -1;
     }
+
+
+    static int SearchInRange(int arr[], int target, int start, int end){
+        if (arr.length == 0){
+            return -1;
+        }
+        for (int i = start; i <= end ; i++) {
+            if (arr[i] == target){
+                return 1;
+            }
+        }
+        return -1;
+    }
+
 
 }
 
