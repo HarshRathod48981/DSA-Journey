@@ -95,3 +95,54 @@ public class LinearSearch {
         return new int[]{-1,-1};
     }
 }
+
+
+
+
+
+/*
+//Q2 - max in array
+//int resultMax = max(arr);
+//System.out.println(resultMax);
+
+//Q3 - min in array
+int resultMin = min(arr);
+        System.out.println(resultMin);
+
+//Q4 reverse an array
+//reverse(arr);
+//System.out.println(Arrays.toString(arr));
+
+
+static int max(int arr[]){
+    int max = arr[0];
+    for (int i = 1; i < arr.length; i++) {
+        if (max < arr[i]){
+            max = arr[i];
+        }
+    }
+    //System.out.println(max);
+    return max;
+}
+
+static int min(int arr[]){
+    int min = arr[0];
+    for (int i = 1; i < arr.length; i++) {
+        if (arr[i] < min){
+            min = arr[i];
+        }
+    }
+    return min;
+
+}
+
+static void reverse(int arr[]){
+    int start = 0;
+    int end = arr.length-1;
+    while (start<end){
+        swap(arr,start,end);
+        start++;
+        end--;
+    }
+}
+*/
