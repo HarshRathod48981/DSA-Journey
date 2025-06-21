@@ -12,6 +12,14 @@ public class LinearSearch {
         //System.out.println(result1);
 
 
+        //search a letter in string: return index if item found. return -1 if not found.
+        String str = "Dave The Magical Cheese Wizard";
+        char target2 = 't';
+        int result2 = SearchIndex2(str, target2);
+        //System.out.println(result2);
+
+
+
     }
 
 
@@ -23,6 +31,19 @@ public class LinearSearch {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == n) {
                 return i;
+            }
+        }
+        return -1;
+    }
+
+    static int SearchIndex2(String string, char n){
+        if (string.isEmpty()){
+            return -1;
+        }
+        n = Character.toLowerCase(n);
+        for (int i = 0; i < string.length(); i++) {
+            if (string.toLowerCase().charAt(i) == n){
+                return 1;
             }
         }
         return -1;
