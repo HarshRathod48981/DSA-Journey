@@ -27,6 +27,18 @@ public class LinearSearch {
         //System.out.println(result3);
 
 
+        //search in 2D array: search the target element in 2D array. return 1 if found. -1 if not found.
+        int arr2D[][] = {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+        };
+        int target4 = 9;
+        int[] result4 = SearchIn2DArray(arr2D, target4);
+        System.out.println(Arrays.toString(result4));
+
+
+
 
     }
 
@@ -71,6 +83,20 @@ public class LinearSearch {
         return -1;
     }
 
+
+    static int[] SearchIn2DArray(int arr[][], int target){
+        if (arr.length == 0){
+            return new int[]{-1,-1};
+        }
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] == target){
+                    return new int[]{i,j};
+                }
+            }
+        }
+        return new int[]{-1,-1};
+    }
 
 }
 
