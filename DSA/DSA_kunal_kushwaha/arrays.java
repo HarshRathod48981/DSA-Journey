@@ -18,6 +18,10 @@ public class arrays {
         int resultMax = max(arr);
         System.out.println(resultMax);
 
+        //Q3 - min in array
+        int resultMin = min(arr);
+        System.out.println(resultMin);
+
     }
 
     static void swap(int arr[], int a, int b){
@@ -35,6 +39,17 @@ public class arrays {
         }
         //System.out.println(max);
         return max;
+    }
+
+    static int min(int arr[]){
+        int min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
+
     }
 
 
