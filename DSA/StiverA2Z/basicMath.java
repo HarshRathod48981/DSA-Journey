@@ -1,10 +1,15 @@
 package StiverA2Z;
 
+import java.util.Arrays;
+
 import static java.lang.Math.log10;
 
 public class basicMath {
     public static void main(String[] args) {
-        int n = 153;
+        int n = 2;
+        isPrime(n);
+
+
     }
 
     //count digits of a number
@@ -47,7 +52,48 @@ public class basicMath {
     }
 
     //armstrong number
-    void armstrongNumber(int n){
-        int power = toString(n).length();
+    static void armstrongNumber(int n){
+        int power = String.valueOf(n).length();
+        int sum = 0;
+        int num = n;
+        while(n>0){
+            int rem = n %10;
+            sum += Math.pow(rem,power);
+            n /= 10;
+        }
+        if (sum == num){
+            System.out.println("Armstrong number");
+        }else{
+            System.out.println("Not an Armstrong number");
+        }
+
+
+    }
+    static int[] printDivisors(int n) {
+        int[] divisors = new int[n];
+
+        for (int i = 1; i <=n ; i++) {
+            if (n%1==0){
+                divisors[i-1] = i;
+            }
+        }
+
+        return divisors;
+    }
+
+    static void isPrime(int n){
+        int count = 0;
+        if (n <= 1) {
+            System.out.println("Not prime");
+            return;
+        }
+        for (int i = 2; i <= Math.sqrt(n) ; i++) {
+            if (n % i == 0) {
+                System.out.println("Not prime");
+                return;
+            }
+        }
+        System.out.println("Prime");
     }
 }
+
